@@ -135,6 +135,62 @@ hlt
 ## Output  
 <img width="1895" height="1017" alt="image" src="https://github.com/user-attachments/assets/aec998b5-c0c0-44f6-9625-2cc78aba9884" />
 
+## AND for 8 bit alp:
+```
+org 100h
+
+mov al,[1100h]
+
+mov bl,[1102h]
+AND al,bl
+mov [1200h],al
+hlt
+
+ret
+```
+## Output:
+<img width="1759" height="1123" alt="Screenshot 2026-02-11 230740" src="https://github.com/user-attachments/assets/68b4aa8f-e012-4c42-aad3-c2a89f124d35" />
+
+## OR for 8 bit alp:
+```
+org 100h
+
+mov al,[1100h]
+
+mov bl,[1102h]
+OR al,bl
+mov [1200h],al
+hlt
+```
+## Output:
+<img width="1651" height="1090" alt="Screenshot 2026-02-11 231834" src="https://github.com/user-attachments/assets/70cecf81-14e8-4a81-a6d9-b4bd7d7d5399" />
+
+## NOT for 8 bit alp:
+```
+org 100h
+mov al,[1100h]
+NOT al
+mov [1200h],al
+hlt
+```
+## Output:
+<img width="1916" height="1174" alt="Screenshot 2026-02-11 233029" src="https://github.com/user-attachments/assets/cf80301b-cf5e-49dc-a567-807db753a0b4" />
+
+## XNOR for 8 bit alp:
+```
+org 100h
+
+mov al,[1100h]
+
+mov bl,[1102h]
+XOR al,bl
+not al
+mov [1200h],al
+hlt
+```
+## Output:
+<img width="1921" height="1190" alt="Screenshot 2026-02-11 234416" src="https://github.com/user-attachments/assets/ce3e8e3c-aa97-4d51-bd44-cff827ebfa51" />
+
 ## Result :
 The execution of ALP on fundamental arithmetic and logical operations is successfully completed. 
 
